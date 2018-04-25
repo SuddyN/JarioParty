@@ -11,17 +11,16 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class JarioParty extends Application {
-    
+
     @Override
     public void start(Stage primaryStage) {
-       
 
-        JarioPlayer root = new JarioPlayer("blue");
-        
+        JarioPlayerGUI root = new JarioPlayerGUI();
+
         VBox displayBox = new VBox(200, root);
-        
+
         Scene scene = new Scene(displayBox, 500, 200);
-        
+
         primaryStage.setTitle("Jario Party Buttons");
         primaryStage.setScene(scene);
         primaryStage.show();
@@ -31,5 +30,5 @@ public class JarioParty extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }
